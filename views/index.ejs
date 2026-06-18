@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Hello World</h1>
+
+    <!-- a form that makes a POST request -->
+    <form action="/submit" method="POST">
+        <input name="firstName" />
+        <input name="lastName" />
+        <button>Submit</button>
+    </form>
+
+    <section>
+        <h2>User Info:</h2>
+        <div>Name is <%= user.name %>
+        </div>
+        <div>Age is <%= user.age %>
+        </div>
+    </section>
+
+    <section>
+        <h2>Cats:</h2>
+        <% for (let cat of cats) { %>
+            <div>
+                <img src="<%= cat %>" alt="cat" width="300px" />
+            </div>
+        <% } %>
+    </section>
+
+
+
+</body>
+
+</html>
