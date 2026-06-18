@@ -2,7 +2,7 @@ import express from "express"
 
 import userRoutes from './routes/user.js'
 
-const port = 3000;
+const port = 3100;
 
 // create our express app
 const app = express();
